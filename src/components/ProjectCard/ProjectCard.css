@@ -1,0 +1,84 @@
+.project-card{
+    width: 21.18em;
+    height: 22.6em;
+    border-radius: 2.5em;
+    background-color: #e4e4e4;
+    padding-left: 2.75em;
+    padding-right: 1em;
+    padding-top: 5em;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
+
+.project-name{
+    font-weight: 800;
+    font-size: 2.25em;
+}
+
+.project-about{
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 120%;
+}
+
+.project-img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-link{
+    color: #000;
+    text-decoration: none;
+}
+
+@media all and (max-width: 1440px){
+    .project-card{
+        width: 21.18em;
+        height: 20em;
+        padding-left: 2em;
+    }
+    
+    .project-name{
+        font-size: 2.2em;
+    }
+    
+    .project-about{
+        font-size: 1.4em;
+    }
+}
+
+@media all and (max-width: 576px){
+    .project-card{
+        width: 60vw;
+        height: 30em;
+        padding-right: 3vw;
+    }
+    
+    .project-name{
+        font-size: 6vw;
+        margin-bottom: 2vw;
+    }
+    
+    .project-about{
+        font-size: 3vw;
+    }
+}
+
+@media all and (max-width: 400px){
+    .project-card{
+        width: 85%;
+        margin: 0 auto;
+        height: 50vw;
+    }
+    
+    .project-name{
+        font-size: 7vw;
+    }
+    
+    .project-about{
+        font-size: 4vw;
+    }
+}
