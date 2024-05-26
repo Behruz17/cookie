@@ -1,0 +1,87 @@
+.team-container{
+    padding-top: 4em;
+    text-align: center;
+}
+
+.team-title{
+    font-weight: 700;
+    font-size: 5em;
+    color: #fff;
+    text-align: center;
+}
+
+.team-desc{
+    width: 24em;
+    font-size: 2em;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin: 0.8em auto;
+}
+
+.members{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin-top: 8em;
+}
+
+.telegram-button{
+    width: 10.5em;
+    height: 2.7em;
+    border-radius: 6.25em;
+    background: #D1BA98;
+    font-weight: 600;
+    color: black;
+    font-size: 1.875em;
+    cursor: pointer;
+    margin-top: 3em;
+    transform-origin: 0.3s;
+}
+
+.telegram-button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media all and (max-width: 1440px){     
+    .members{
+        gap: 2.5em;
+    } 
+    .team-title{
+        font-size: 3.8em;
+    }
+    
+    .team-desc{
+        font-size: 1.6em;
+    }
+    
+    .telegram-button{
+        width: 10em;
+        height: 2.5em;
+        font-size: 1.5em;
+    }
+}
+
+@media all and (max-width: 960px){      
+    .members{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 576px){      
+    .team-title{
+        font-size: 9vw;
+    }
+    
+    .team-desc{
+        width: 90%;
+        font-size: 4vw;
+    }
+    
+    .telegram-button{
+        font-size: 4vw;
+        margin-top: 2vw;
+    }
+}

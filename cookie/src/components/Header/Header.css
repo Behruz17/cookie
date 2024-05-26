@@ -1,0 +1,120 @@
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    min-height: 64px;
+    background-color: #281B03;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.header-info{
+    display: flex;
+    align-items: center;
+    gap: 7em;
+}
+
+.logo{
+    display: flex;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 4em;
+    height: 3.25em;
+}
+
+.logoText{
+    font-size: 2.25em;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 1.5em;
+}
+
+.nav-list-item a{
+    font-size: 2em;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.active-link{
+    color: #E99A00 !important;    
+}
+
+.nav-list-item a:hover{
+    color: #E99A00;
+}
+
+.telegram-logo{
+    background-color: #D9D9D9;
+    width: 2.8em;
+    height: 2.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.telegram-logo img{
+width: 2.2em;
+height: 1.625em;
+}
+
+@media all and (max-width: 1440px){
+    .logo img{
+        width: 3.5em;
+        height: 2.75em;
+    }
+
+    .telegram-logo{
+        width: 2.2em !important;
+        height: 2.2em !important;
+    }
+    
+    .telegram-logo img{
+    width: 1.8em !important;
+    height: 1.2em !important;
+    }
+
+    .logoText{
+        font-size: 1.5em;
+        margin-top: 0.2em;
+    }
+    .nav-list-item a{
+        font-size: 1.2em;
+    }
+
+}
+
+
+@media all and (max-width: 576px){
+    .logo img{
+        width: 15vw;
+        height: 16.3vw;
+    }
+    
+    .logoText{
+        font-size: 8vw;
+        margin-top: 2vw;
+    }
+
+    .header-info{
+        display: none;
+    }
+    
+}
+
