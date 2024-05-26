@@ -1,0 +1,147 @@
+.header-container{
+    width: 100%;
+    height: 55em;
+    background-color: #281B03;
+    border-bottom-left-radius: 6.25em;
+    border-bottom-right-radius: 6.25em;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 4.5em 9em;
+}
+
+.header-cookie{
+    width: 23.3em;
+    height: 22.9em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.header-light{
+    width: 23em;
+    height: 25em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.sections{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10em;
+    gap: 10em;
+    padding-right: 5em;
+}
+
+.left{
+    width: 52em;
+    position: relative;
+    z-index: 2;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+    z-index: 77;
+    margin-top: 4em;
+}
+
+.left h2{
+font-size: 6em;    
+font-weight: 700;
+color: #FFFFFF;
+margin-bottom: 0.5em;
+}
+
+.left p{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.explore{
+    width: 9.25em;
+    height: 2.625em;
+    border-radius: 6.25em;
+    background-color: #FFFFFF;
+    color: black;
+    font-weight: 600;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.explore:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media all and (max-width: 1440px){
+    .header-cookie{
+        width: 20.3em;
+        height: 19.9em;
+    }
+    
+    .left{
+        width: 35em;
+    }
+
+    .sections{
+        margin-top: 11em;
+    }
+    
+    .left h2{
+    font-size: 4em; 
+    }
+    
+    .left p{
+        font-size: 1.7em;
+    }
+    
+    .explore{
+        width: 8em;
+        height: 2.3em;
+        font-size: 1.5em;
+    }   
+    .header-container{
+        height: 45em;
+    }
+}
+
+@media all and (max-width: 960px){    
+    .sections{
+        padding-right: 0em;
+    }
+}
+
+@media all and (max-width: 576px){    
+    .left{
+        width: 100%;
+    }    
+    .left h2{
+    font-size: 7vw; 
+    text-align: center;
+    }
+    
+    .left p{
+        font-size: 3.5vw;
+    }
+    
+    .explore{
+        font-size: 3vw;
+    }   
+    .header-container{
+        height: 90vw;
+    }
+    .sections{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0vw;
+    }
+}
